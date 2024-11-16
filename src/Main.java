@@ -1,4 +1,5 @@
 import ArraysAndHashing.ContainsDuplicate;
+import ArraysAndHashing.GroupAnagrams;
 import ArraysAndHashing.IsAnagram;
 import ArraysAndHashing.TwoSum;
 
@@ -11,11 +12,15 @@ public class Main {
         ContainsDuplicate duplicate = new ContainsDuplicate();
         IsAnagram anagram = new IsAnagram();
         TwoSum twoSum = new TwoSum();
+        GroupAnagrams groupAnagrams = new GroupAnagrams();
+
         int[] nums = {1,2,3,4};
+        String[] strings = {"act", "pots", "tops", "cat", "stop", "hat"};
 
         System.out.println(duplicate.hasDuplicate(nums));
         System.out.println(anagram.anagram("olleh", "hello"));
         System.out.println(Arrays.toString(twoSum.twoSum(nums, 4)));
+        System.out.println(groupAnagrams.anagrams(strings));
 
     }
 }
