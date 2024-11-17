@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import TwoPointers.ValidPalindrome;
 
 import java.util.Arrays;
 
@@ -12,6 +13,7 @@ public class Main {
         GroupAnagrams groupAnagrams = new GroupAnagrams();
         TopKFrequentElement el = new TopKFrequentElement();
         ProductOfArrayExceptSelf products = new ProductOfArrayExceptSelf();
+        ValidPalindrome validPalindrome = new ValidPalindrome();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
@@ -24,6 +26,7 @@ public class Main {
         System.out.println(groupAnagrams.anagrams(strings));
         System.out.println(Arrays.toString(el.kthElement(nums2, 2)));
         System.out.println(Arrays.toString(products.products(nums3)));
+        System.out.println(validPalindrome.isPal("A man, a plan, a canal: Panama!"));
 
     }
 }
