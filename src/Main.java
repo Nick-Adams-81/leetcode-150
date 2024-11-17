@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import TwoPointers.TwoSum2;
 import TwoPointers.ValidPalindrome;
 
 import java.util.Arrays;
@@ -14,6 +15,7 @@ public class Main {
         TopKFrequentElement el = new TopKFrequentElement();
         ProductOfArrayExceptSelf products = new ProductOfArrayExceptSelf();
         ValidPalindrome validPalindrome = new ValidPalindrome();
+        TwoSum2 twoSum2 = new TwoSum2();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
@@ -27,6 +29,7 @@ public class Main {
         System.out.println(Arrays.toString(el.kthElement(nums2, 2)));
         System.out.println(Arrays.toString(products.products(nums3)));
         System.out.println(validPalindrome.isPal("A man, a plan, a canal: Panama!"));
+        System.out.println(Arrays.toString(twoSum2.twoSum2(nums3, 8)));
 
     }
 }
