@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import TwoPointers.MaxArea;
 import TwoPointers.TwoSum2;
 import TwoPointers.ValidPalindrome;
 
@@ -16,10 +17,12 @@ public class Main {
         ProductOfArrayExceptSelf products = new ProductOfArrayExceptSelf();
         ValidPalindrome validPalindrome = new ValidPalindrome();
         TwoSum2 twoSum2 = new TwoSum2();
+        MaxArea maxArea = new MaxArea();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
         int[] nums3 = {1, 2, 4, 6};
+        int[] heights = {1 ,7, 2, 5, 4, 7, 3 ,6};
         String[] strings = {"act", "pots", "tops", "cat", "stop", "hat"};
 
         System.out.println(duplicate.hasDuplicate(nums));
@@ -30,6 +33,7 @@ public class Main {
         System.out.println(Arrays.toString(products.products(nums3)));
         System.out.println(validPalindrome.isPal("A man, a plan, a canal: Panama!"));
         System.out.println(Arrays.toString(twoSum2.twoSum2(nums3, 8)));
+        System.out.println(maxArea.maxArea(heights));
 
     }
 }
