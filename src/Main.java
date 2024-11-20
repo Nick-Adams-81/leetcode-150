@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import Stack.DailyTemps;
 import Stack.EvaluateReversePolishNotation;
 import Stack.ValidParens;
 import TwoPointers.MaxArea;
@@ -24,12 +25,14 @@ public class Main {
         RainWater rainWater = new RainWater();
         ValidParens validParens = new ValidParens();
         EvaluateReversePolishNotation eval = new EvaluateReversePolishNotation();
+        DailyTemps temps = new DailyTemps();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
         int[] nums3 = {1, 2, 4, 6};
         int[] heights = {1 ,7, 2, 5, 4, 7, 3 ,6};
         int[] water = {0, 2, 0, 3, 1, 0, 1, 3, 2, 1};
+        int[] dailyTemps = {30, 38, 30, 36, 35, 40, 28};
         String[] strings = {"act", "pots", "tops", "cat", "stop", "hat"};
         String[] tokens = {"1", "2", "+", "3", "*", "4", "-"};
 
@@ -45,6 +48,7 @@ public class Main {
         System.out.println(rainWater.trap(water));
         System.out.println(validParens.isValid("[[]{}()]"));
         System.out.println(eval.evaluateRPN(tokens));
+        System.out.println(Arrays.toString(temps.temps(dailyTemps)));
 
     }
 }
