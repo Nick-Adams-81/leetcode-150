@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import Stack.EvaluateReversePolishNotation;
 import Stack.ValidParens;
 import TwoPointers.MaxArea;
 import TwoPointers.RainWater;
@@ -22,6 +23,7 @@ public class Main {
         MaxArea maxArea = new MaxArea();
         RainWater rainWater = new RainWater();
         ValidParens validParens = new ValidParens();
+        EvaluateReversePolishNotation eval = new EvaluateReversePolishNotation();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
@@ -29,6 +31,7 @@ public class Main {
         int[] heights = {1 ,7, 2, 5, 4, 7, 3 ,6};
         int[] water = {0, 2, 0, 3, 1, 0, 1, 3, 2, 1};
         String[] strings = {"act", "pots", "tops", "cat", "stop", "hat"};
+        String[] tokens = {"1", "2", "+", "3", "*", "4", "-"};
 
         System.out.println(duplicate.hasDuplicate(nums));
         System.out.println(anagram.anagram("olleh", "hello"));
@@ -41,6 +44,7 @@ public class Main {
         System.out.println(maxArea.maxArea(heights));
         System.out.println(rainWater.trap(water));
         System.out.println(validParens.isValid("[[]{}()]"));
+        System.out.println(eval.evaluateRPN(tokens));
 
     }
 }
