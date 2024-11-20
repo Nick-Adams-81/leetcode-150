@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import Stack.ValidParens;
 import TwoPointers.MaxArea;
 import TwoPointers.RainWater;
 import TwoPointers.TwoSum2;
@@ -20,6 +21,7 @@ public class Main {
         TwoSum2 twoSum2 = new TwoSum2();
         MaxArea maxArea = new MaxArea();
         RainWater rainWater = new RainWater();
+        ValidParens validParens = new ValidParens();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
@@ -38,6 +40,7 @@ public class Main {
         System.out.println(Arrays.toString(twoSum2.twoSum2(nums3, 8)));
         System.out.println(maxArea.maxArea(heights));
         System.out.println(rainWater.trap(water));
+        System.out.println(validParens.isValid("[[]{}()]"));
 
     }
 }
