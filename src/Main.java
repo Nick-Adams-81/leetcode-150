@@ -28,6 +28,7 @@ public class Main {
         EvaluateReversePolishNotation eval = new EvaluateReversePolishNotation();
         DailyTemps temps = new DailyTemps();
         CarFleet carFleet = new CarFleet();
+        RearrangeLetters rearrangeLetters = new RearrangeLetters();
 
         int[] nums = {1,2,3,4};
         int[] nums2 = {1, 2, 2, 3, 3, 3, 3};
@@ -54,6 +55,7 @@ public class Main {
         System.out.println(eval.evaluateRPN(tokens));
         System.out.println(Arrays.toString(temps.temps(dailyTemps)));
         System.out.println(carFleet.carFleet(10, position, speed));
+        System.out.println(rearrangeLetters.rearrange("aaa"));
 
     }
 }

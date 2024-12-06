@@ -10,7 +10,7 @@ public class CarFleet {
         int[][] pair = new int[N][2];
         for(int i = 0; i < N; i++) {
             pair[i][0] = position[i];
-            pair[i][1] = speed[i];;
+            pair[i][1] = speed[i];
         }
         Arrays.sort(pair, (a, b) -> Integer.compare(b[0], a[0]));
         Stack<Double> stack = new Stack<>();
